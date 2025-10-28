@@ -1,0 +1,106 @@
+body {
+  background: #181a1b;
+  color: #eaeaea;
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.App{
+  animation : fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar {
+  background: #111314;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #eaeaea;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 2px;
+  transition: border-bottom 0.2s;
+}
+
+.navbar-links a.active,
+.navbar-links a:hover {
+  border-bottom: 2px solid #b846e5;
+}
+
+.contact-btn {
+  border: 1px solid #4f46e5;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  margin-left: 1rem;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.intro-section {
+  text-align: left;
+}
+.intro-section h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.intro-section h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.experiences {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.experiences-section h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.footer {
+  background: #111314;
+  color: #888;
+  text-align: center ;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}

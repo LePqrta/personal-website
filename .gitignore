@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Production
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# IDE files
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc
+coverage/
