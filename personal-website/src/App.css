@@ -16,6 +16,15 @@ body {
 .App{
   animation : fadeIn 1s ease;
 }
+.App, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -122,4 +131,36 @@ body {
   text-align: center ;
   padding: 1rem 0;
   margin-top: 3rem;
+}
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .navbar-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-content,
+  .experiences-section {
+    padding: 0 1rem;
+  }
+  .experience-card {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .experience-card {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .experiences-section h2 {
+    font-size: 1.3rem;
+  }
 }
