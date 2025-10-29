@@ -1,106 +1,85 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Experiences from "./Experiences";
 import './App.css';
+
+function Home() {
+  return (
+    <section className="intro-section" id="home">
+      <div className="experience-card">
+        <h1>Hi, I am Onat!</h1>
+        <p>
+          Senior Computer Engineering Student at MEF University with experience in backend-focused web development,
+          complemented by frontend work, across both startups and corporate environments. Interested in AI, Cloud, IoT, and NLP.
+        </p>
+      </div>
+            <div className="experience-card">
+        <h2>About Me</h2>
+      <p>
+        I am an ambitious and dedicated senior computer engineering student at MEF University with a passion for software development. I had experiences working at different sizes of companies. This helped me to observe
+        and get more experience in different work environments. Most of my experience is in web development, especially backend.
+        However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!
+      </p>
+      </div>
+      <div className="experience-card">
+      <h3>Skills</h3>
+        <div className="skills">
+          <strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, SQL<br />
+          <strong>Frameworks:</strong> React, ASP.NET, Spring Boot<br />
+          <strong>Tools:</strong> Git/GitHub, Postman, Vercel, Docker
+        </div>
+        </div>
+    </section>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <nav className="navbar">
-        <div className="navbar-brand">Onat Kaan Atılgan</div>
-        <ul className="navbar-links">
-          <li><a href="https://github.com/LePqrta">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/onat-kaan-atilgan/">LinkedIn</a></li>
-        </ul>
-      </nav>
-      <main className="main-content">
-        <section className="intro-section" id="home">
-          <h1>About Me</h1>
-          <p>
-            Hi! I am Onat Kaan Atılgan, a senior computer engineering student at MEF University. 
-            I am experienced in full-stack web development with experiences in both big enterprises and smaller companies.
-            I am very eager to learn and work on projects and I am actively working on personal projects to improve my skills.
-            
-          </p>
-          <div className="experiences">
-            <strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, SQL<br />
-            <strong>Frameworks:</strong> React, ASP.NET, Spring Boot<br />
-            <strong>Tools:</strong> Git/GitHub, Postman, Vercel, Docker
-          </div>
-        </section>
-<section className="experiences-section" id="experiences">
-  <h2>My Experiences</h2>
-  <div className="experience-card">
-    <div className="experience-title">
-      <strong>Software Development Intern at</strong>
-      <span className="company">
-        <a href="https://www.mintyfi.com" target="_blank" rel="noopener noreferrer">Mintyfi Software Technologies
-  </a></span>
-      <span className="dates">(August 2024 - September 2024)</span>
-    </div>
-    <ul className="experience-list">
-      <li>Developed a backend-focused library management application using Spring Boot</li>
-      <li>Implemented features such as authorization, authentication, dockerizing, and database integration</li>
-    </ul>
-  </div>
-      <div className="experience-card">
-    <div className="experience-title">
-      <strong>Student Teaching Assistant at</strong>
-      <span className="company">
-        <a href="https://www.mef.edu.tr" target="_blank" rel="noopener noreferrer">MEF University
-  </a></span>
-      <span className="dates">(February 2025-June 2025)</span>
-    </div>
-    <ul className="experience-list">
-      <li>Assisted students in understanding and implementing algorithms used in projects</li>
-      <li>Provided technical support in labs for the development of the projects developed by students</li>
-    </ul>
-  </div>
-      <div className="experience-card">
-    <div className="experience-title">
-      <strong>Freelance Software Development at</strong>
-      <span className="company">
-        <a href="https://www.diaistanbul.tr" target="_blank" rel="noopener noreferrer">Kompitürk Bilgisayar
-  </a></span>
-      <span className="dates">(May 2025-August 2025)</span>
-    </div>
-    <ul className="experience-list">
-      <li>Assisted in the development of web applications using ASP.NET, Node.Js and React</li>
-      <li>Contributed to both frontend and backend tasks</li>
-    </ul>
-  </div>
-        <div className="experience-card">
-    <div className="experience-title">
-      <strong>Software Development Intern at</strong>
-      <span className="company">
-        <a href="https://www.zorlu.com" target="_blank" rel="noopener noreferrer">Zorlu Holding
-  </a></span>
-      <span className="dates">(August 2025-September 2025)</span>
-    </div>
-    <ul className="experience-list">
-      <li>Contributed to the development of web applications that are used actively across Zorlu Holding companies and thousands of employees.</li>
-      <li>Worked with ASP.NET, React, Razor (CSHTML) to add functionalities to applications.</li>
-      <li>Gained experience in a corporate software development environment.</li>
-    </ul>
-  </div>
-    <div className="experience-card">
-    <div className="experience-title">
-      <strong>IT Intern at</strong>
-      <span className="company">
-        <a href="https://socialofficetr.com/" target="_blank" rel="noopener noreferrer">Social Office
-  </a></span>
-      <span className="dates">(October 2025-Ongoing)</span>
-    </div>
-    <ul className="experience-list">
-      <li>Contributed to the development of web applications that are used actively across Zorlu Holding companies and thousands of employees.</li>
-      <li>Worked with ASP.NET, React, Razor (CSHTML) to add functionalities to applications.</li>
-      <li>Gained experience in a corporate software development environment.</li>
-    </ul>
-  </div>
-</section>
-      </main>
-      <footer className="footer">
-        &copy; {new Date().getFullYear()} Onat Kaan Atılgan
-      </footer>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <nav className="navbar">
+          <div className="navbar-brand">Onat Kaan Atılgan</div>
+          <ul className="navbar-links">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => isActive ? "active" : ""}
+                end
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/experiences"
+                className={({ isActive }) => isActive ? "active" : ""}
+              >
+                Experiences
+              </NavLink>
+            </li>
+            <li>
+              <a href="https://github.com/LePqrta" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/onat-kaan-atilgan/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/experiences" element={<Experiences />} />
+          </Routes>
+        </main>
+        <footer className="footer">
+          &copy; {new Date().getFullYear()} Onat Kaan Atılgan
+        </footer>
+      </div>
+    </BrowserRouter>
   );
 }
 
