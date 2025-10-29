@@ -9,10 +9,30 @@ body {
 .App{
   animation : fadeIn 1s ease;
 }
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -25,12 +45,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  animation: slideDown 0.8s ease;
 }
 
 .navbar-brand {
   font-size: 1.3rem;
   font-weight: bold;
   color: #eaeaea;
+  text-align: left;
 }
 
 .navbar-links {
@@ -58,16 +80,18 @@ body {
   border: 1px solid #4f46e5;
   border-radius: 4px;
   padding: 0.3rem 0.8rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .main-content {
-  max-width: 900px;
+  max-width: 65%;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .intro-section {
   text-align: left;
+  animation: fadeIn 1s 0.5s ease both;
+
 }
 .intro-section h1 {
   font-size: 2.5rem;
@@ -89,12 +113,70 @@ body {
 .experiences {
   margin-top: 1rem;
   font-size: 1rem;
+  margin-bottom: 1rem;;
 }
 
-.experiences-section h2 {
-  margin-top: 3rem;
-  font-size: 2rem;
-  color: #ffffff;
+.experiences-section {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: left;
+  animation: slideUp 1s 1s ease both;
+}
+
+.experience-card {
+  background: #222325;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.experience-card:hover {
+  box-shadow: 0 4px 24px rgba(184,70,229,0.18), 0 2px 8px rgba(0,0,0,0.12);
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.experience-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  color: #eaeaea;
+}
+
+.company {
+  color: #b846e5;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.company a {
+  color: #b846e5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.company a:hover {
+  color: #eebbc3;
+  text-decoration: underline;
+}
+
+.dates {
+  color: #888;
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.experience-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #eaeaea;
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
 .footer {
