@@ -67,9 +67,8 @@ function Experiences() {
       <span className="dates">(October 2025-Ongoing)</span>
     </div>
     <ul className="experience-list">
-      <li>Contributed to the development of web applications that are used actively across Zorlu Holding companies and thousands of employees.</li>
-      <li>Worked with ASP.NET, React, Razor (CSHTML) to add functionalities to applications.</li>
-      <li>Gained experience in a corporate software development environment.</li>
+      <li>Working with Python, AutoCAD, Photoshop, and Excel on projects</li>
+      <li>Participating in portfolio processes</li>
     </ul>
   </div>
 </section>

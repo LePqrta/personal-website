@@ -16,7 +16,7 @@ function Home() {
             <div className="experience-card">
         <h2>About Me</h2>
       <p>
-        I am an ambitious and dedicated senior computer engineering student at MEF University with a passion for software development. I had experiences working at different sizes of companies. This helped me to observe
+        I am an ambitious and dedicated senior computer engineering student with a passion for software development. I had experiences working at different sizes of companies. This helped me to observe
         and get more experience in different work environments. Most of my experience is in web development, especially backend.
         However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!
       </p>
