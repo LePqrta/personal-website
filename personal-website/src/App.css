@@ -144,7 +144,7 @@ body {
   }
   .main-content,
   .experiences-section {
-    padding: 0 1rem;
+    padding: 0 0.25rem;
   }
   .experience-card {
     padding: 1rem;
