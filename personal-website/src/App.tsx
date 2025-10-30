@@ -22,7 +22,7 @@ function Home() {
         However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!
       </p>
       <a
-        href="/OnatKaanAtilganV3.3.pdf"
+        href="/OnatKaanAtilganv3.3.pdf"
         download
         target="_blank"
         rel="noopener noreferrer"
