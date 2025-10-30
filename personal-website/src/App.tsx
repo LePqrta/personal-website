@@ -21,15 +21,6 @@ function Home() {
         and get more experience in different work environments. Most of my experience is in web development, especially backend.
         However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!
       </p>
-      <a
-        href="/OnatKaanAtilganv3.3.pdf"
-        download
-        target="_blank"
-        rel="noopener noreferrer"
-        className="cv-btn"
-      >
-        Download My CV
-      </a>
       </div>
       <div className="experience-card">
       <h2>Skills</h2>
