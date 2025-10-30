@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import Experiences from "./Experiences";
+import Projects from "./Projects";
 import './App.css';
 
 function Home() {
@@ -20,13 +21,29 @@ function Home() {
         and get more experience in different work environments. Most of my experience is in web development, especially backend.
         However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!
       </p>
+      <a
+        href="/OnatKaanAtilganV3.3.pdf"
+        download
+        target="_blank"
+        rel="noopener noreferrer"
+        className="cv-btn"
+      >
+        Download My CV
+      </a>
       </div>
       <div className="experience-card">
-      <h3>Skills</h3>
+      <h2>Skills</h2>
         <div className="skills">
           <strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, SQL<br />
           <strong>Frameworks:</strong> React, ASP.NET, Spring Boot<br />
           <strong>Tools:</strong> Git/GitHub, Postman, Vercel, Docker
+        </div>
+        </div>
+              <div className="experience-card">
+      <h2>How To Contact Me!</h2>
+        <div className="Contact">
+          <strong>Email:</strong> onatkaanatilgan@gmail.com<br />
+          <strong>Phone:</strong> +90 536 071 15 65
         </div>
         </div>
     </section>
@@ -58,6 +75,11 @@ function App() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/Projects" className={({ isActive }) => isActive ? "active" : ""}>
+                Projects
+              </NavLink>
+            </li>
+            <li>
               <a href="https://github.com/LePqrta" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
@@ -73,6 +95,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/experiences" element={<Experiences />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
         <footer className="footer">
