@@ -64,7 +64,7 @@ function Experiences() {
       <span className="company">
         <a href="https://socialofficetr.com/" target="_blank" rel="noopener noreferrer">Social Office
   </a></span>
-      <span className="dates">(October 2025-Ongoing)</span>
+      <span className="dates">(October 2025-November 2025)</span>
     </div>
     <ul className="experience-list">
       <li>Working with Python, AutoCAD, Photoshop, and Excel on projects</li>

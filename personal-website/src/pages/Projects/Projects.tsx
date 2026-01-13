@@ -17,6 +17,13 @@ const myProjects = [
     image: "",
   },
   {
+    name: "Churn Prediction",
+    url: "https://github.com/LePqrta/retail-churn-prediction-tft",
+    description: "Churn predition on transactional retail data using Temporal Fusion Transformers (TFT) and Evolutionary Algoirthms.",
+    language: "Python",
+    image: "",
+  },
+  {
     name: "License Plate Recognition",
     url: "https://github.com/LePqrta/License-Place-Recognition-With-Machine-Learning",
     description: "Machine learning project for recognizing license plates. (In Progress)",
