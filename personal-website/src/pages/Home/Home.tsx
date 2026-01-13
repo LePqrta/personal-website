@@ -4,14 +4,14 @@ import './Home.css';
 function Home() {
   return (
     <section className="intro-section" id="home">
-      <div className="experience-card">
+      <div className="card">
         <h1>Hi, I am Onat!</h1>
         <p>
           Senior Computer Engineering Student at MEF University with experience in backend-focused web development,
           complemented by frontend work, across both startups and corporate environments. Interested in AI, Cloud, IoT, and NLP.
         </p>
       </div>
-      <div className="experience-card">
+      <div className="card">
         <h2>About Me</h2>
         <p>
           I am an ambitious and dedicated senior computer engineering student with a passion for software development. I had experiences working at different sizes of companies. This helped me to observe
@@ -19,7 +19,7 @@ function Home() {
           However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!
         </p>
       </div>
-      <div className="experience-card">
+      <div className="card">
         <h2>Skills</h2>
         <div className="skills">
           <strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, SQL<br />
@@ -27,7 +27,7 @@ function Home() {
           <strong>Tools:</strong> Git/GitHub, Postman, Vercel, Docker
         </div>
       </div>
-      <div className="experience-card">
+      <div className="card">
         <h2>How To Contact Me!</h2>
         <div className="Contact">
           <strong>Email:</strong> onatkaanatilgan@gmail.com<br />
