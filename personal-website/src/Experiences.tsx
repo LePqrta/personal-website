@@ -71,6 +71,15 @@ function Experiences() {
       <li>Participating in portfolio processes</li>
     </ul>
   </div>
+  <div className="experience-card">
+    <div className="experience-title">
+      <strong>Software Development Intern</strong>
+      <span className="company">
+        <a href="https://www.turkcell.com.tr/" target="_blank" rel="noopener noreferrer">Turkcell
+  </a></span>
+      <span className="dates">(January 2026-Ongoing)</span>
+    </div>
+  </div>
 </section>
             </div>
     ) } export default Experiences;
