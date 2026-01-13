@@ -1,0 +1,32 @@
+.navbar {
+  background: rgba(34, 35, 37, 0.60);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #eaeaea;
+  text-align: left;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links a.active,
+.navbar-links a:hover {
+  border-bottom: 2px solid #b846e5;
+}
