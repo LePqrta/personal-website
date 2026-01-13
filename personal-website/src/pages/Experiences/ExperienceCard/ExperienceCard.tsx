@@ -42,14 +42,7 @@ const ExperienceCard: React.FC<Props> = ({ exp, previewCount = 2 }) => {
       {items.length > 0 && (
           <ul className={`experience-list${expanded ? ' expanded' : ''}`}>
             {items.map((r, idx) => (
-              <li
-                key={idx}
-                style={
-                  !expanded && shouldTruncate && idx >= previewCount
-                    ? { display: 'none' }
-                    : {}
-                }
-              >
+              <li key={idx}>
                 {r}
               </li>
             ))}
