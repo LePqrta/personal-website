@@ -71,64 +71,6 @@ body {
   animation: slideUp 1s 1s ease both;
 }
 
-.experience-card {
-  background: rgba(34, 35, 37, 0.60);   
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1rem auto 0;    
-  width: 100%;
-  max-width: 900px;      
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.experience-card:hover {
-  box-shadow: 0 4px 24px rgba(184,70,229,0.18), 0 2px 8px rgba(0,0,0,0.12);
-  transform: scale(1.03);
-  z-index: 1;
-}
-
-.experience-title {
-  font-size: 1.15rem;
-  margin-bottom: 0.7rem;
-  color: #eaeaea;
-}
-
-.company {
-  color: #b846e5;
-  font-weight: 500;
-  margin-left: 0.5rem;
-}
-
-.company a {
-  color: #b846e5;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s, text-decoration 0.2s;
-}
-
-.company a:hover {
-  color: #eebbc3;
-  text-decoration: underline;
-}
-
-.dates {
-  color: #888;
-  margin-left: 0.5rem;
-  font-size: 0.95rem;
-}
-
-.experience-list {
-  margin: 0;
-  padding-left: 1.2rem;
-  color: #eaeaea;
-}
-
-.experience-list li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-}
-
 .footer {
   background: #111314;
   color: #888;
@@ -150,19 +92,10 @@ body {
   .experiences-section {
     padding: 0 1rem;
   }
-  .experience-card {
-    padding: 1rem;
-    font-size: 0.95rem;
-  }
 }
-
 @media (max-width: 600px) {
   .navbar-brand {
     font-size: 1rem;
-  }
-  .experience-card {
-    padding: 0.7rem;
-    font-size: 0.9rem;
   }
   .experiences-section h2 {
     font-size: 1.3rem;

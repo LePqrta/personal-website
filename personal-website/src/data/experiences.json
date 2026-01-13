@@ -1,0 +1,66 @@
+{
+    "experiences": [
+        {
+            "title": "Software Development Intern",
+            "company": "Mintyfi Software Technologies",
+            "URL": "https://www.mintyfi.com/",
+            "startDate": "August 2024",
+            "endDate": "September 2024",
+            "responsibilities": [
+                "Developed a backend-focused linrary management application using Spring Boot.",
+                "Implemented features such as authorization, authentication, dockerization, and database integration."            ]
+        },
+        {
+            "title": "Student Teaching Assistant",
+            "company": "MEF University",
+            "URL": "https://www.mef.edu.tr/",
+            "startDate": "February 2025",
+            "endDate": "June 2025",
+            "responsibilities": [
+                "Assisted professors in conducting lab sessions for Programming Studio course.",
+                "Provided support to students in understanding complex concepts and debugging code."
+            ]
+        },
+        {
+            "title": "Freelance Software Developer",
+            "company": "Kompitürk Bilgisayar",
+            "URL": "https://www.diaistanbul.tr",
+            "startDate": "May 2025",
+            "endDate": "August 2025",
+            "responsibilities": [
+                "Assisted in the development of web applications using ASP.NET, Node.Js and React.",
+                "Contributed to both frontend and backend development."
+            ]
+        },
+        {
+            "title": "Software Development Intern",
+            "company": "Zorlu Holding",
+            "URL": "https://www.zorlu.com",
+            "startDate": "August 2025",
+            "endDate": "September 2025",
+            "responsibilities": [
+                "Contributed to the development of web applications that are used actively across Zorlu Holding companies and thousands of employees.",
+                "Worked with ASP.NET, React, Razor (CSHTML) to add functionalities to applications.",
+                "Gained experience in a corporate software development environment." ]
+        },
+        {
+            "title": "IT Intern",
+            "company": "Social Office",
+            "URL": "https://www.socialoffice.com",
+            "startDate": "October 2025",
+            "endDate": "November 2025",
+            "responsibilities": [
+                "Worked with Python, AutoCAD, Photoshop, and Excel on projects",
+                "Participated in portfolio processes."
+            ]
+        },
+        {
+            "title": "Software Development Intern",
+            "company": "Turkcell",
+            "URL": "https://www.turkcell.com.tr/",
+            "startDate": "January 2026",
+            "endDate": "Ongoing"
+        }
+
+    ]
+}
