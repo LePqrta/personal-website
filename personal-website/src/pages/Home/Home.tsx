@@ -1,39 +1,36 @@
 import React from 'react';
+import Card from '../../components/Card/Card';
+import profileData from '../../data/profile.json';
 import './Home.css';
 
 function Home() {
   return (
     <section className="intro-section" id="home">
-      <div className="card">
-        <h1>Hi, I am Onat!</h1>
+      <Card title={profileData.intro.title}>
         <p>
-          Senior Computer Engineering Student at MEF University with experience in backend-focused web development,
-          complemented by frontend work, across both startups and corporate environments. Interested in AI, Cloud, IoT, and NLP.
+          {profileData.intro.description}
         </p>
-      </div>
-      <div className="card">
-        <h2>About Me</h2>
+      </Card>
+      <Card title={profileData.about.title}>
         <p>
-          I am an ambitious and dedicated senior computer engineering student with a passion for software development. I had experiences working at different sizes of companies. This helped me to observe
-          and get more experience in different work environments. Most of my experience is in web development, especially backend.
-          However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!
+          {profileData.about.description}
         </p>
-      </div>
-      <div className="card">
-        <h2>Skills</h2>
+      </Card>
+      <Card title={profileData.skills.title}>
         <div className="skills">
-          <strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, SQL<br />
-          <strong>Frameworks:</strong> React, ASP.NET, Spring Boot<br />
-          <strong>Tools:</strong> Git/GitHub, Postman, Vercel, Docker
+          {profileData.skills.categories.map((category, index) => (
+            <div key={index}>
+              <strong>{category.name}:</strong> {category.items}
+            </div>
+          ))}
         </div>
-      </div>
-      <div className="card">
-        <h2>How To Contact Me!</h2>
-        <div className="Contact">
-          <strong>Email:</strong> onatkaanatilgan@gmail.com<br />
-          <strong>Phone:</strong> +90 536 071 15 65
+      </Card>
+      <Card title={profileData.contact.title}>
+        <div className="contact">
+          <strong>Email:</strong> {profileData.contact.info.find(info => info.label === "Email")?.value}<br />
+          <strong>Phone:</strong> {profileData.contact.info.find(info => info.label === "Phone")?.value}
         </div>
-      </div>
+      </Card>
     </section>
   );
 }
