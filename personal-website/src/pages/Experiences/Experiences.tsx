@@ -1,34 +1,21 @@
 import React from "react";
 import './Experiences.css';
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
-import data from '../../data/experiences.json';
-
-export type Experience = {
-    title: string;
-    company?: string;
-    URL?: string;
-    startDate?: string;
-    endDate?: string;
-    responsibilities?: string[];
-};
-
-// Define the shape of the JSON file
-type ExperienceData = {
-    experiences: Experience[];
-};
+import experienceData from '../../data/experiences.json';
+import { Experience } from '../../types';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 function Experiences() {
-    // Cast data to the correct type instead of 'any'
-    const experiences = (data as ExperienceData).experiences ?? [];
+    useDocumentTitle('Experiences | Onat Kaan Atılgan');
+    const experiences: Experience[] = experienceData.experiences;
 
     return (
         <div className="experiences">
             <section className="experiences-section" id="experiences">
                 <h2>My Experiences</h2>
-
-            {experiences.map((exp, i) => (
-                <ExperienceCard key={exp.title + i} exp={exp} previewCount={0} />
-            ))}
+                {experiences.map((exp, i) => (
+                    <ExperienceCard key={exp.title + i} exp={exp} previewCount={0} />
+                ))}
             </section>
         </div>
     );

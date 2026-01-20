@@ -10,9 +10,18 @@
   "skills": {
     "title": "Skills",
     "categories": [
-      { "name": "Languages", "items": "Java, Python, JavaScript, HTML, CSS, SQL" },
-      { "name": "Frameworks", "items": "React, ASP.NET, Spring Boot" },
-      { "name": "Tools", "items": "Git/GitHub, Postman, Vercel, Docker" }
+      { 
+        "name": "Languages", 
+        "items": ["Java", "Python", "JavaScript", "HTML", "CSS", "SQL"] 
+      },
+      { 
+        "name": "Frameworks", 
+        "items": ["React", "ASP.NET", "Spring Boot"] 
+      },
+      { 
+        "name": "Tools", 
+        "items": ["Git/GitHub", "Postman", "Vercel", "Docker"] 
+      }
     ]
   },
   "contact": {

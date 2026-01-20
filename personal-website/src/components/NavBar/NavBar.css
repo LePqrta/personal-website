@@ -29,5 +29,5 @@
 
 .navbar-links a.active,
 .navbar-links a:hover {
-  border-bottom: 2px solid #b846e5;
+  border-bottom: 2px solid var(--primary-color); 
 }

@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import './ExperienceCard.css';
-
-export type Experience = {
-  title: string;
-  company?: string;
-  URL?: string;
-  startDate?: string;
-  endDate?: string;
-  responsibilities?: string[];
-};
+import { Experience } from '../../../types'; 
 
 type Props = {
   exp: Experience;
@@ -41,36 +33,37 @@ const ExperienceCard: React.FC<Props> = ({ exp, previewCount = 2 }) => {
 
       {items.length > 0 && (
           <ul className={`experience-list${expanded ? ' expanded' : ''}`}>
-            {items.map((r, idx) => (
+            {visibleItems.map((r, idx) => (
               <li key={idx}>
                 {r}
               </li>
             ))}
           </ul>
       )}
-        {shouldTruncate && (
-<button
-  className={`toggle-arrow${expanded ? ' expanded' : ''}`}
-  onClick={() => setExpanded(prev => !prev)}
-  aria-expanded={expanded}
-  aria-label={expanded ? 'Collapse responsibilities' : 'Expand responsibilities'}
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="currentColor"
-    style={{ width: '1.5em', height: '1.5em', display: 'block' }}
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="m19.5 8.25-7.5 7.5-7.5-7.5"
-    />
-  </svg>
-</button>
-        )}
+      
+      {shouldTruncate && (
+        <button
+          className={`toggle-arrow${expanded ? ' expanded' : ''}`}
+          onClick={() => setExpanded(prev => !prev)}
+          aria-expanded={expanded}
+          aria-label={expanded ? 'Collapse responsibilities' : 'Expand responsibilities'}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            style={{ width: '1.5em', height: '1.5em', display: 'block' }}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </button>
+      )}
     </article>
   );
 };

@@ -3,7 +3,7 @@
     {
       "name": "Tetris 2048",
       "url": "https://github.com/LePqrta/Tetris_2048",
-      "description": "A fun mashup of Tetris and 2048 built with JavaScript.",
+      "description": "A fun mashup of Tetris and 2048.",
       "language": "Python",
       "image": ""
     },
@@ -24,7 +24,7 @@
     {
       "name": "License Plate Recognition",
       "url": "https://github.com/LePqrta/License-Place-Recognition-With-Machine-Learning",
-      "description": "Machine learning project for recognizing license plates. (In Progress)",
+      "description": "Machine learning project for recognizing license plates.",
       "language": "Python",
       "image": ""
     },

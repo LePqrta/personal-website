@@ -1,47 +1,41 @@
 import React from "react";
 import './Projects.css';
-import data from '../../data/projects.json';
-
-type Project = {
-  name: string;
-  url: string;
-  description: string;
-  language: string;
-  image?: string;
-};
-
-type ProjectData = {
-  projects: Project[];
-};
+import projectData from '../../data/projects.json';
+import { Project } from '../../types'; 
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 function Projects() {
-  // Safely cast the imported JSON to our Type
-  const projects = (data as ProjectData).projects ?? [];
+  useDocumentTitle('Projects | Onat Kaan Atılgan');
+  const projects: Project[] = projectData.projects;
 
   return (
     <section className="projects-section">
       <h2>Projects</h2>
-        <div className="project-list">
+      <div className="project-list">
         {projects.map((project) => (
-            <a
+          <a
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
             className="project-card"
             key={project.name}
-            >
+          >
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <div>
-                <strong>Language:</strong> {project.language}
+              <strong>Language:</strong> {project.language}
             </div>
-            {/* Only render the image tag if an image string actually exists */}
             {project.image && (
-                <img src={project.image} alt={project.name} className="project-image" />
+              <img 
+                src={project.image} 
+                alt={project.altText || `Screenshot of ${project.name}`} 
+                className="project-image"
+                loading="lazy"
+              />
             )}
-            </a>
+          </a>
         ))}
-        </div>
+      </div>
     </section>
   );
 }
