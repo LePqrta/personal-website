@@ -1,0 +1,25 @@
+{
+  "intro": {
+    "title": "Hi, I am Onat!",
+    "description": "Senior Computer Engineering Student at MEF University with experience in backend-focused web development, complemented by frontend work, across both startups and corporate environments. Interested in AI, Cloud, IoT, and NLP."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am an ambitious and dedicated senior computer engineering student with a passion for software development. I had experiences working at different sizes of companies. This helped me to observe and get more experience in different work environments. Most of my experience is in web development, especially backend. However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!"
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": [
+      { "name": "Languages", "items": "Java, Python, JavaScript, HTML, CSS, SQL" },
+      { "name": "Frameworks", "items": "React, ASP.NET, Spring Boot" },
+      { "name": "Tools", "items": "Git/GitHub, Postman, Vercel, Docker" }
+    ]
+  },
+  "contact": {
+    "title": "How To Contact Me!",
+    "info": [
+      { "label": "Email", "value": "onatkaanatilgan@gmail.com" },
+      { "label": "Phone", "value": "+90 536 071 15 65" }
+    ]
+  }
+}

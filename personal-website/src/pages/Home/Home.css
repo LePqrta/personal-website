@@ -18,19 +18,4 @@
   animation: slideUp 1s 1s ease both;
 }
 
-.card {
-  background: rgba(34, 35, 37, 0.60);   
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1rem auto 0;    
-  width: 100%;
-  max-width: 900px;      
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: box-shadow 0.3s, transform 0.3s;
-}
 
-.card:hover {
-  box-shadow: 0 4px 24px rgba(184,70,229,0.18), 0 2px 8px rgba(0,0,0,0.12);
-  transform: scale(1.03);
-  z-index: 1;
-}
