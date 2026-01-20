@@ -19,7 +19,7 @@ const myProjects = [
   {
     name: "Churn Prediction",
     url: "https://github.com/LePqrta/retail-churn-prediction-tft",
-    description: "Churn predition on transactional retail data using Temporal Fusion Transformers (TFT) and Evolutionary Algoirthms.",
+    description: "Churn precition on transactional retail data using Temporal Fusion Transformers (TFT) and Evolutionary Algorithms.",
     language: "Python",
     image: "",
   },

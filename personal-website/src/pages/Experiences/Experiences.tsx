@@ -3,7 +3,7 @@ import './Experiences.css';
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import data from '../../data/experiences.json';
 
-type Experience = {
+export type Experience = {
     title: string;
     company?: string;
     URL?: string;
@@ -12,8 +12,14 @@ type Experience = {
     responsibilities?: string[];
 };
 
+// Define the shape of the JSON file
+type ExperienceData = {
+    experiences: Experience[];
+};
+
 function Experiences() {
-    const experiences: Experience[] = (data as any).experiences ?? [];
+    // Cast data to the correct type instead of 'any'
+    const experiences = (data as ExperienceData).experiences ?? [];
 
     return (
         <div className="experiences">

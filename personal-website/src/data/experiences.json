@@ -7,8 +7,9 @@
             "startDate": "August 2024",
             "endDate": "September 2024",
             "responsibilities": [
-                "Developed a backend-focused linrary management application using Spring Boot.",
-                "Implemented features such as authorization, authentication, dockerization, and database integration."            ]
+                "Developed a backend-focused library management application using Spring Boot.", 
+                "Implemented features such as authorization, authentication, dockerization, and database integration."
+            ]
         },
         {
             "title": "Student Teaching Assistant",
