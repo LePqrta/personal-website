@@ -1,8 +1,9 @@
 .navbar {
-  background: rgba(34, 35, 37, 0.60);
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  animation: slideDown 0.8s ease;
 }
 
 .navbar-brand {
