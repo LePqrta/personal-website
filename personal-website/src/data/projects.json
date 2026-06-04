@@ -1,39 +1,46 @@
 {
   "projects": [
     {
-      "name": "Tetris 2048",
-      "url": "https://github.com/LePqrta/Tetris_2048",
-      "description": "A fun mashup of Tetris and 2048.",
-      "language": "Python",
-      "image": ""
+      "name": "Churn Model Comparison Dashboard",
+      "url": "https://github.com/LePqrta/sdp-dashboard",
+      "description": "Full-stack dashboard for comparing TFT and TabNet churn prediction models, with customer lookup, model metrics, prediction views, and FastAPI-backed demo data.",
+      "language": "Next.js, TypeScript, Tailwind CSS, FastAPI, Python"
+    },
+    {
+      "name": "BiP Clone",
+      "url": "https://github.com/LePqrta/BipClone",
+      "description": "React Native mobile messaging app project focused on cross-platform development patterns, Android workflow, and mobile UI implementation.",
+      "language": "React Native, TypeScript"
     },
     {
       "name": "LinkedIn Clone",
       "url": "https://github.com/LePqrta/LinkedIn-Clone",
-      "description": "A LinkedIn clone web app. Fully functioning user authentication, post creation, likes, comments, and more.",
-      "language": "Frontend with React, Backend with Spring Boot, Database with PostgreSQL",
-      "image": ""
+      "description": "Full-stack social networking clone with user authentication, post creation, likes, comments, and PostgreSQL-backed persistence.",
+      "language": "React, Spring Boot, PostgreSQL"
     },
     {
-      "name": "Churn Prediction",
-      "url": "https://github.com/LePqrta/retail-churn-prediction-tft",
-      "description": "Churn prediction on transactional retail data using Temporal Fusion Transformers (TFT) and Evolutionary Algorithms.",
-      "language": "Python",
-      "image": ""
+      "name": "Named Entity Recognition",
+      "url": "https://github.com/LePqrta/Named-Entity-Recognition-NER-",
+      "description": "NER pipeline using a fine-tuned DistilBERT model trained on OntoNotes and custom SpaceX-related data, with training, inference, and evaluation scripts.",
+      "language": "Python, Hugging Face Transformers, PyTorch"
     },
     {
       "name": "License Plate Recognition",
       "url": "https://github.com/LePqrta/License-Place-Recognition-With-Machine-Learning",
-      "description": "Machine learning project for recognizing license plates.",
-      "language": "Python",
-      "image": ""
+      "description": "Machine learning project for detecting and recognizing license plates from image data.",
+      "language": "Python, Jupyter Notebook"
     },
     {
       "name": "LZW Compression",
       "url": "https://github.com/LePqrta/LZW-Compression",
-      "description": "Implementation of the LZW compression algorithm with Images.",
-      "language": "Python",
-      "image": ""
+      "description": "Implementation of the LZW compression algorithm with image-focused compression and decompression experiments.",
+      "language": "Python"
+    },
+    {
+      "name": "Tetris 2048",
+      "url": "https://github.com/LePqrta/Tetris_2048",
+      "description": "A Python game experiment that combines Tetris mechanics with 2048-style tile merging.",
+      "language": "Python"
     }
   ]
 }

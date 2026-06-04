@@ -15,3 +15,40 @@ export interface Experience {
   endDate?: string;
   responsibilities?: string[];
 }
+
+export interface Intro {
+  title: string;
+  description: string;
+}
+
+export interface About {
+  title: string;
+  description: string;
+}
+
+export interface SkillCategory {
+  name: string;
+  items: string[];
+}
+
+export interface Skills {
+  title: string;
+  categories: SkillCategory[];
+}
+
+export interface ContactInfo {
+  label: string;
+  value: string;
+}
+
+export interface Contact {
+  title: string;
+  info: ContactInfo[];
+}
+
+export interface Profile {
+  intro: Intro;
+  about: About;
+  skills: Skills;
+  contact: Contact;
+}

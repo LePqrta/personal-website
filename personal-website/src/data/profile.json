@@ -1,26 +1,26 @@
 {
   "intro": {
     "title": "Hi, I am Onat!",
-    "description": "Senior Computer Engineering Student at MEF University with experience in backend-focused web development, complemented by frontend work, across both startups and corporate environments. Interested in AI, Cloud, IoT, and NLP."
+    "description": "Computer Engineering student at MEF University, graduating in July 2026, with experience in backend, full-stack, and cross-platform mobile development across startup and corporate environments. Interested in AI, cloud, IoT, and NLP."
   },
   "about": {
     "title": "About Me",
-    "description": "I am an ambitious and dedicated senior computer engineering student with a passion for software development. I had experiences working at different sizes of companies. This helped me to observe and get more experience in different work environments. Most of my experience is in web development, especially backend. However, I am currently working on my AI/ML skills with courses from my university and from personal projects. I look forward to applying my skills in real-world projects!"
+    "description": "I am a senior Computer Engineering student at MEF University, expected to graduate in July 2026. My work spans backend services, full-stack web applications, React Native mobile development, and AI/ML projects. I have contributed in startup, freelance, and corporate teams, including Turkcell, Zorlu Holding, Mintyfi, and MEF University."
   },
   "skills": {
     "title": "Skills",
     "categories": [
       { 
         "name": "Languages", 
-        "items": ["Java", "Python", "JavaScript", "HTML", "CSS", "SQL"] 
+        "items": ["Java", "C#", "Python", "TypeScript", "JavaScript", "SQL", "HTML", "CSS"] 
       },
       { 
-        "name": "Frameworks", 
-        "items": ["React", "ASP.NET", "Spring Boot"] 
+        "name": "Frameworks & Platforms", 
+        "items": ["Spring Framework", "ASP.NET", "React", "React Native", "PostgreSQL"] 
       },
       { 
         "name": "Tools", 
-        "items": ["Git/GitHub", "Postman", "Vercel", "Docker"] 
+        "items": ["Git", "GitHub", "Bitbucket", "Jira", "Postman", "REST APIs", "JWT Authentication"] 
       }
     ]
   },
