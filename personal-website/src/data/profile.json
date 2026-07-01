@@ -1,11 +1,11 @@
 {
   "intro": {
     "title": "Hi, I am Onat!",
-    "description": "Computer Engineering student at MEF University, graduating in July 2026, with experience in backend, full-stack, and cross-platform mobile development across startup and corporate environments. Interested in AI, cloud, IoT, and NLP."
+    "description": "Senior Computer Engineering student at MEF University, graduating in July 2026, with corporate experience in backend, full-stack, and cross-platform mobile development. Hands-on with AWS cloud architectures, Agile/Scrum, and AI-assisted software development."
   },
   "about": {
     "title": "About Me",
-    "description": "I am a senior Computer Engineering student at MEF University, expected to graduate in July 2026. My work spans backend services, full-stack web applications, React Native mobile development, and AI/ML projects. I have contributed in startup, freelance, and corporate teams, including Turkcell, Zorlu Holding, Mintyfi, and MEF University."
+    "description": "I am a senior Computer Engineering student at MEF University, expected to graduate in July 2026 with a 3.34 / 4.00 GPA. My work spans backend services, full-stack web applications, React Native mobile development, AWS cloud architecture, and AI/ML projects. I have contributed in startup, freelance, and corporate teams, including Turkcell, Zorlu Holding, Social Office, Mintyfi, and MEF University."
   },
   "skills": {
     "title": "Skills",
@@ -16,11 +16,11 @@
       },
       { 
         "name": "Frameworks & Platforms", 
-        "items": ["Spring Framework", "ASP.NET", "React", "React Native", "PostgreSQL"] 
+        "items": ["Spring Boot", "ASP.NET", "React", "React Native", "PostgreSQL", "AWS"] 
       },
       { 
         "name": "Tools", 
-        "items": ["Git", "GitHub", "Bitbucket", "Jira", "Postman", "REST APIs", "JWT Authentication"] 
+        "items": ["Git", "GitHub", "Bitbucket", "Jira", "Confluence", "Postman", "Docker", "REST APIs"] 
       }
     ]
   },

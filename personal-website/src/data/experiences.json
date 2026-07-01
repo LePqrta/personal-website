@@ -60,10 +60,11 @@
       "company": "Turkcell",
       "URL": "https://www.turkcell.com.tr/",
       "startDate": "January 2026",
-      "endDate": "Ongoing",
+      "endDate": "June 2026",
       "responsibilities": [
-        "Developing features and bug fixes for the BiP and VoIP Services and Applications department using React Native.",
-        "Developing features for BiP log analyzer tools using TypeScript."
+        "Developed features, fixed bugs, and wrote unit tests for BiP using React Native.",
+        "Developed TypeScript features for a BiP log analysis tool.",
+        "Worked in an Agile/Scrum environment using Jira, Confluence, Bitbucket, and Git."
       ]
     }
   ]

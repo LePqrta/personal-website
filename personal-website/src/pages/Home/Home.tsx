@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Download, GraduationCap, Mail, Smartphone, Workflow } from 'lucide-react';
 import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 import Cubes from '../../components/ReactBits/Cubes/Cubes';
-import TextPressure from '../../components/ReactBits/TextPressure/TextPressure';
 
 export default function Home() {
   useDocumentTitle('Home | Onat Kaan Atılgan');
@@ -15,7 +14,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-20 pb-20 w-full">
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex flex-col justify-center items-start text-left relative">
+      <section className="min-h-[80vh] flex flex-col justify-center items-start text-left relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -30,27 +29,16 @@ export default function Home() {
           >
             Hello, I'm
           </motion.h2>
-          <div className="mb-6 h-[100px] md:h-[130px] w-full max-w-3xl flex flex-col justify-center">
-            <TextPressure
-              text="Onat Kaan Atılgan"
-              flex={true}
-              alpha={false}
-              stroke={false}
-              width={true}
-              weight={true}
-              italic={true}
-              textColor="#ffffff"
-              strokeColor="#ff0000"
-              minFontSize={48}
-            />
-          </div>
+          <h1 className="mb-6 max-w-5xl bg-gradient-to-r from-white via-secondary to-primary bg-clip-text pb-2 text-5xl font-semibold leading-[1.15] tracking-normal text-transparent sm:text-6xl md:text-7xl xl:text-7xl">
+            Onat Kaan Atılgan
+          </h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
             className="text-xl md:text-2xl text-text-muted max-w-2xl mb-10 leading-relaxed"
           >
-            Computer Engineering student at MEF University, <span className="text-secondary">graduating in July 2026</span>, building full-stack, mobile, and AI/ML projects across startup and corporate environments.
+            Senior Computer Engineering student at MEF University, <span className="text-secondary">graduating in July 2026</span>, with corporate experience in backend, full-stack, cross-platform mobile, AWS, and AI-assisted development.
           </motion.p>
 
           <motion.div
@@ -100,21 +88,21 @@ export default function Home() {
               <GraduationCap className="text-primary mb-5" size={30} />
               <h3 className="text-xl font-bold mb-3">Graduating Soon</h3>
               <p className="text-text-muted text-sm leading-relaxed">
-                Finishing Computer Engineering at MEF University with an expected graduation date of July 2026.
+                Finishing Computer Engineering at MEF University with a 3.34 / 4.00 GPA and an expected graduation date of July 2026.
               </p>
             </Card>
             <Card className="p-6 bg-dark/40 border-white/5">
               <Workflow className="text-secondary mb-5" size={30} />
               <h3 className="text-xl font-bold mb-3">Full-Stack Work</h3>
               <p className="text-text-muted text-sm leading-relaxed">
-                Building backend services, web applications, dashboards, and internal tools with practical product constraints.
+                Building backend services, web applications, dashboards, and internal tools with Spring Boot, ASP.NET, React, and FastAPI.
               </p>
             </Card>
             <Card className="p-6 bg-dark/40 border-white/5">
               <Smartphone className="text-primary mb-5" size={30} />
               <h3 className="text-xl font-bold mb-3">Mobile & AI/ML</h3>
               <p className="text-text-muted text-sm leading-relaxed">
-                Working with React Native at Turkcell while continuing AI/ML projects in NLP and churn prediction.
+                Built React Native features and tests for BiP at Turkcell while continuing AI/ML projects in NLP and churn prediction.
               </p>
             </Card>
           </div>

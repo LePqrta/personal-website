@@ -7,10 +7,10 @@
       "language": "Next.js, TypeScript, Tailwind CSS, FastAPI, Python"
     },
     {
-      "name": "BiP Clone",
-      "url": "https://github.com/LePqrta/BipClone",
-      "description": "React Native mobile messaging app project focused on cross-platform development patterns, Android workflow, and mobile UI implementation.",
-      "language": "React Native, TypeScript"
+      "name": "ChatApp",
+      "url": "https://github.com/LePqrta/ChatApp",
+      "description": "Kotlin chat application project focused on mobile messaging workflows and Android development fundamentals.",
+      "language": "Kotlin"
     },
     {
       "name": "LinkedIn Clone",

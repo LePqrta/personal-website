@@ -17,7 +17,7 @@ module.exports = {
                 },
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['"Segoe UI Variable"', '"Segoe UI"', 'Inter', 'system-ui', 'sans-serif'],
             },
             animation: {
                 'gradient-x': 'gradient-x 15s ease infinite',
